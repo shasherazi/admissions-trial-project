@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 id="title" class="text">freeCodeCamp Survey Form</h1>
+    <p id="description" class="text">Thank you for taking time to help us improve the platform</p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="Name" id="name" class="form-control" placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="Email" id="email" class="form-control" placeholder="Enter Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Age(optional)</label>
+            <input type="number" name="Age" id="number" class="form-control" placeholder="Age" min="10" max="99">
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="drop" class="form-control" required>
+                <option disabled selected value>Select Current Role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full time learner</option>
+                <option value="np">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                <input type="radio" name="user-rec" value="definitely" class="input-radio" checked>Definitely
+            </label>
+            <label>
+                <input type="radio" name="user-rec" value="Maybe" class="input-radio">Maybe
+            </label>
+            <label>
+                <input type="radio" name="user-rec" value="Not Sure" class="input-radio">Not Sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Which is you favorite feature?</p>
+            <select name="role" id="drop" class="form-control" required>
+                <option disabled selected value>Select Feature</option>
+                <option value="Challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What would you want improvised? (Check all that apply)</p>
+            <label>
+                <input type="checkbox" name="user-rec" value="Front-End" class="input-checkbox">Front-End
+            </label>
+            <label>
+                <input type="checkbox" name="user-rec" value="Back-End" class="input-checkbox">Back-End
+            </label>
+            <label>
+                <input type="checkbox" name="user-rec" value="Data" class="input-checkbox">Data
+            </label>
+            <label>
+                <input type="checkbox" name="user-rec" value="Challenges" class="input-checkbox">Challenges
+            </label>
+            <label>
+                <input type="checkbox" name="user-rec" value="Open Source" class="input-checkbox">Open Source
+            </label>
+            <label>
+                <input type="checkbox" name="user-rec" value="Gitter" class="input-checkbox">Gitter
+            </label>
+            <label>
+                <input type="checkbox" name="user-rec" value="Videos" class="input-checkbox">Videos
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Any Comments or suggestions?</p>
+            <textarea name="comment" id="comments" class="input-area" placeholder="Enter Comment here..."></textarea>
+        </div>
+        <input type="submit" id="submit" value="Submit">    
+    </form>
+</body>
+</html>
